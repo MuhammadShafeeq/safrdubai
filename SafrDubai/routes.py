@@ -14,8 +14,7 @@ def form():
             return render_template("form.html")
         else:
             route = transit(starting_point[0], starting_point[1], destination[0], destination[1])
-
-            return render_template("transit.html", route=route)
+            return route
     return render_template('form.html')
 
 @app.route('/')
