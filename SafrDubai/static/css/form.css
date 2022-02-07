@@ -1,0 +1,352 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+h1 {
+    margin: 0.67em 0
+}
+
+button, input {
+    font-family: inherit;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button {
+    text-transform: none
+}
+
+[type='submit'] {
+    -webkit-appearance: button
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        width: 540px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1000px
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        width: 1140px
+    }
+}
+
+.flex {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex
+}
+
+.column-inner {
+    width: 100%;
+    position: relative
+}
+
+[class*='col-'] {
+    width: 100%;
+    display: flex
+}
+
+@media screen and (min-width: 1024px) {
+    .col-lg-1\/1 {
+        width: 100%
+    }
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible
+}
+
+.svg-inline--fa {
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: middle
+}
+
+.svg-inline--fa.fa-fw {
+    width: 1.25em
+}
+
+.fa-fw {
+    text-align: center
+}
+
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body, html {
+    min-height: 100%
+}
+
+html * {
+    box-sizing: border-box
+}
+
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    background: #f0f3f9;
+    margin: 0 auto;
+    overflow-x: hidden !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: -apple-system, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'
+}
+
+div, section {
+    border: 0
+}
+
+button {
+    cursor: pointer
+}
+
+
+.journeyplanner-section {
+    margin: 0 auto;
+    position: relative
+}
+
+.flex {
+    justify-content: center
+}
+
+.journeyplanner-heading p {
+    margin: 0
+}
+
+.journeyplanner-wrapper {
+    display: block;
+    position: relative
+}
+
+.error-message {
+    font-size: 14px;
+    color: #ff3a28;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background-color: #fff
+}
+
+@media screen and (max-width: 767px) {
+    [class*='col-'] {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+    }
+
+    .flex {
+        margin-left: 0 !important;
+        margin-right: 0 !important
+    }
+}
+
+:root {
+    --color-1: #8910F1
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.5
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1.5
+}
+
+.journeyplanner-section-b0b3xy2v {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: #f0f3f9
+}
+
+.journeyplanner-row-bm92wj6a {
+    transform: translateX(0%);
+    align-items: stretch
+}
+
+.journeyplanner-row-bm92wj6a.flex {
+    margin-left: calc(-11px / 2);
+    margin-right: calc(-11px / 2)
+}
+
+.journeyplanner-row-bm92wj6a [class*="col-"] {
+    padding-left: calc(11px / 2);
+    padding-right: calc(11px / 2)
+}
+
+.journeyplanner-column-fyu6cc98 {
+    padding-right: 20%;
+    transform: translateX(10%);
+    justify-content: center
+}
+
+@media screen and (max-width: 1023px) {
+    .journeyplanner-column-fyu6cc98 {
+        text-align: center;
+        padding-right: 0%;
+        margin-bottom: 60px
+    }
+}
+
+.journeyplanner-column-fyu6cc98 {
+    display: flex;
+    flex-direction: column
+}
+
+.journeyplanner-heading-pcye6pq0 {
+    text-align: center
+}
+
+.journeyplanner-heading-pcye6pq0 p {
+    display: inline
+}
+
+.journeyplanner-column-qt2zbpc9 {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 20px 60px 0px rgba(7, 0, 47, 0.2)
+}
+
+@media screen and (max-width: 767px) {
+    .journeyplanner-column-qt2zbpc9 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+.journeyplanner-heading-yse5xw48 {
+    margin-top: 0px;
+    color: #06024C
+}
+
+.journeyplanner-heading-yse5xw48 p {
+    display: inline
+}
+
+.journeyplanner-inputForm-r31ryq64 {
+    background-repeat: no-repeat;
+    border-radius: 31px 31px 31px 31px
+}
+
+.journeyplanner-inputForm-r31ryq64 .form-button {
+    text-align: center
+}
+
+.journeyplanner-inputForm-r31ryq64 .form-control {
+    width: 100%;
+    color: #171A21;
+    font-size: 16px;
+    min-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid #DDDDDD;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #FFFFFF;
+    margin-bottom: 15px
+}
+
+.journeyplanner-inputForm-r31ryq64 label {
+    display: inline-block;
+    color: #171A21;
+    font-size: 16px;
+    padding-bottom: 10px
+}
+
+.journeyplanner-inputForm-r31ryq64 button {
+    color: #FFFFFF;
+    height: 60px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 0px solid;
+    border-radius: 30px 30px 30px 30px;
+    background-color: #26C281;
+    background-image: linear-gradient(45deg, #FF09C9 0%, #FF644C 100%);
+    width: auto
+}
