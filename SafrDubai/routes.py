@@ -17,3 +17,8 @@ def form():
 
             return render_template("transit.html", route=route)
     return render_template('form.html')
+
+@app.route('/')
+@app.route('/index')
+def index():
+    return render_template("index.html")
