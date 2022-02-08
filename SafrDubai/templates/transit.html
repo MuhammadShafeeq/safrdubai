@@ -12,7 +12,9 @@
         <div class="box-wrapper">
             <h1>Route:</h1>
             <ul>
-                
+                {% for item in route["routes"][0]["sections"] %}
+                    <li><a href="https://maps.google.com/?q={{ item["arrival"]["place"]["location"]["lat"] }},{{ item["arrival"]["place"]["location"]["lng"] }}">Location:</a>{{ item["arrival"]["place"]["name"] }}</li>
+                {% endfor %}
             </ul>
         </div>
     </div>
