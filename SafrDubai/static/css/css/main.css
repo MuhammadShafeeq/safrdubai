@@ -1,9 +1,4 @@
 
-
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
-
-
 @font-face {
   font-family: Lato-Regular;
   src: url('../fonts/Lato/Lato-Regular.ttf'); 
@@ -14,8 +9,6 @@
   src: url('../fonts/Lato/Lato-Bold.ttf'); 
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -27,7 +20,6 @@ body, html {
 	font-family: sans-serif;
 }
 
-/* ------------------------------------ */
 a {
 	margin: 0px;
 	transition: all 0.4s;
@@ -44,7 +36,7 @@ a:hover {
 	text-decoration: none;
 }
 
-/* ------------------------------------ */
+
 h1,h2,h3,h4,h5,h6 {margin: 0px;}
 
 p {margin: 0px;}
@@ -55,7 +47,6 @@ ul, li {
 }
 
 
-/* ------------------------------------ */
 input {
   display: block;
 	outline: none;
@@ -71,7 +62,6 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-/* ------------------------------------ */
 button {
 	outline: none !important;
 	border: none;
@@ -86,8 +76,6 @@ iframe {
 	border: none !important;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Scroll bar ]*/
 .js-pscroll {
   position: relative;
   overflow: hidden;
@@ -131,9 +119,11 @@ iframe {
   top: 15px;
 }
 
-
-/*//////////////////////////////////////////////////////////////////
-[ Table ]*/
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .limiter {
   width: 1366px;
@@ -160,8 +150,6 @@ iframe {
   width: 1170px;
 }
 
-/*//////////////////////////////////////////////////////////////////
-[ Table ]*/
 .table100 {
   background-color: #fff;
 }
