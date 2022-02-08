@@ -13,7 +13,7 @@
             <h1>Route:</h1>
             <ul>
                 {% for item in route["routes"][0]["sections"] %}
-                    <li><a href="https://maps.google.com/?q={{ item["arrival"]["place"]["location"]["lat"] }},{{ item["arrival"]["place"]["location"]["lng"] }}">Location:</a>{{ item["arrival"]["place"]["name"] }}</li>
+                    <li><a target="_blank" href="https://maps.google.com/?q={{ item["arrival"]["place"]["location"]["lat"] }},{{ item["arrival"]["place"]["location"]["lng"] }}">Location Map: </a>{{ item["arrival"]["place"]["name"] }} {{ item["arrival"]["time"] }}</li>
                 {% endfor %}
             </ul>
         </div>
