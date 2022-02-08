@@ -15,4 +15,4 @@ def geocode(query):
         location = [latitude, longitude]
         return location
     else:
-        return "An Error Occurred"
+        return "An Error Occurred"a
