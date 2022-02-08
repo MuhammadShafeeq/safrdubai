@@ -1,72 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 body {
-  font-size: 16px;
-  background: #f3f5f6;
+    height: 100vh;
+    overflow: hidden;
+    background: #f0f3f9;
 }
 
-.autocomplete-container {
-  margin-bottom: 20px;
+.wrapper {
+    width: 100%;
+    height: 100vh;
 }
 
-.input-container {
-  display: flex;
-  position: relative;
+.wrapper-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.input-container input {
-  flex: 1;
-  outline: none;
-
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  padding-right: 31px;
-  font-size: 16px;
+.box-wrapper {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0px 20px 60px 0px rgb(7 0 47 / 20%);
+    width: 1000px;
+    height: 70%;
 }
 
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
-  border-top: none;
-  background-color: #fff;
-
-  z-index: 99;
-  top: calc(100% + 2px);
-  left: 0;
-  right: 0;
-}
-
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.autocomplete-items div:hover {
-  /*when hovering an item:*/
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.autocomplete-items .autocomplete-active {
-  /*when navigating through the items using the arrow keys:*/
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.clear-button {
-  color: rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-
-  position: absolute;
-  right: 5px;
-  top: 0;
-
-  height: 100%;
-  display: none;
-  align-items: center;
-}
-
-.clear-button.visible {
-  display: flex;
-}
-
-.clear-button:hover {
-  color: rgba(0, 0, 0, 0.6);
+.box-wrapper h1 {
+    font-family: 'Montserrat', sans-serif;
 }
