@@ -1,5 +1,6 @@
 from SafrDubai import HERE_API_KEY, GEOAPIFY_API_KEY
 import requests
+from datetime import datetime
 
 def transit(origin_lat, origin_lng, dest_lat, dest_lng):
     response = requests.get(f"https://transit.router.hereapi.com/v8/routes?apiKey={HERE_API_KEY}&origin={origin_lat},{origin_lng}&destination={dest_lat},{dest_lng}")
@@ -16,3 +17,8 @@ def geocode(query):
         return location
     else:
         return "An Error Occurred"
+
+def fix_time(date):
+    x = date.split('+')
+    date = datetime.strptime(x[0], '%Y-%m-%dT%H:%M:%S')
+    return date

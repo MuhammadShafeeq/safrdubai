@@ -1,6 +1,6 @@
 from SafrDubai import app
 from flask import render_template, request, redirect, flash, url_for
-from SafrDubai.ApiHandler import geocode, transit
+from SafrDubai.ApiHandler import geocode, transit, fix_time
 import json
 from datetime import datetime, timezone
 
@@ -21,8 +21,10 @@ def route():
                     flash("Routing is not possible due to missing information. (Try again with full address)")
                     return render_template("form.html")
             except:
+                for item in route["routes"][0]["sections"]:
+                    item["departure"]["time"] = fix_time(item["departure"]["time"])
+                    item["arrival"]["time"] = fix_time(item["arrival"]["time"])
                 return render_template("transit.html", route=route)
-
     return render_template('form.html')
 
 @app.route('/')
