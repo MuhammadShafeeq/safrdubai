@@ -28,8 +28,9 @@
 									<th class="cell100 column2">Type</th>
 									<th class="cell100 column3">Start Time</th>
 									<th class="cell100 column4">End Time</th>
-									<th class="cell100 column5">Location Link</th>
-								</tr>
+                                    <th class="cell100 column5">Location Link</th>
+			                        <th class="cell100 column6">Transport ID</th>
+                                </tr>
 							</thead>
 						</table>
 					</div>
@@ -43,8 +44,9 @@
 									<td class="cell100 column2">{{ item["transport"]["mode"] }}</td>
 									<td class="cell100 column3">{{ item["departure"]["time"] }}</td>
 									<td class="cell100 column4">{{ item["arrival"]["time"] }}</td>
-									<td class="cell100 column5"><a target="_blank" href="https://maps.google.com/?q={{ item["arrival"]["place"]["location"]["lat"] }},{{ item["arrival"]["place"]["location"]["lng"] }}">Map</a></td>
-								</tr>
+                                    <td class="cell100 column5"><a target="_blank" href="https://maps.google.com/?q={{ item["arrival"]["place"]["location"]["lat"] }},{{ item["arrival"]["place"]["location"]["lng"] }}">Map</a></td>
+								    <td class="cell100 column6">{{ item["transport"]["name"] }}</td>
+                                </tr>
                             </tbody>
                             {% endfor %}
                         </table>

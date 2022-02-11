@@ -31,6 +31,17 @@
                             <h4 class="journeyplanner-heading journeyplanner-heading-yse5xw48"><span><p>Please Enter the Exact Address of your starting and ending points.</p>
 </span></h4>
                         </div>
+                        {% with messages = get_flashed_messages() %}
+                            {% if messages %}
+                                <div class="flashed-messages">
+                                    {% for message in messages %}
+                                        <div class="flash invalid-feedback" style="color: red">
+                                            <p>{{ message }}</p>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endwith %}
                         <form method="post" action="" autocomplete="off" id=r31ryq64 class=journeyplanner-inputForm-r31ryq64>
                             {{ csrf_token }}
                             <div class=fields-wrapper>

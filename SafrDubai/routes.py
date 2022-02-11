@@ -16,7 +16,13 @@ def route():
             return render_template("form.html")
         else:
             route = transit(starting_point[0], starting_point[1], destination[0], destination[1])
-            return render_template("transit.html", route=route)
+            try:
+                if route["notices"][0]["code"] == "noCoverage":
+                    flash("Routing is not possible due to missing information. (Try again with full address)")
+                    return render_template("form.html")
+            except:
+                return render_template("transit.html", route=route)
+
     return render_template('form.html')
 
 @app.route('/')
